@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(231, 231, 231);
+}
+
+.container-fluid{
+    padding: 0px !important;
+}
+
+.header{
+    text-align: center;
+    color: white;
+    position: relative;
+    height:200px;
+    background-image: url(images/1.jpg); 
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.header h1{
+    padding: 10px;
+    color: #fbf97b;
+    font-size: 3.7em;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 2px #01074e, 4px 0px 2px #01074e, 0px 4px 2px #01074e, -2px 0px 2px #01074e, 0px -2px 2px #01074e;
+}
+
+.time{
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.todo-input{
+    width: 56%;
+    font-size: 1.5em;
+    padding: 8px 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.todo-input:focus{
+    outline: none;
+    border: 2px solid royalblue;
+    box-shadow: 0px 0px 4px 2px royalblue;
+}
+
+.input-div{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.btnAdd{
+    margin-left: 10px;
+    border-radius: 30px;
+    background-color: rgb(6, 177, 29);
+    border: none;
+    padding: 1px 5px;
+}
+
+.fa-plus-circle{
+    font-size: 3.1em;
+    color: white;
+}
+
+.fa-trash{
+    font-size: 3.45em;
+    color: rgb(209, 25, 25);
+}
+
+.btnDeleteAll{
+    padding: 0px 3px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+}
+
+.btnAdd:focus, .btnDeleteAll:focus{
+    outline: none;
+}
+
+.todo-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.todo-list{
+    width: 70%;
+    margin: 0px auto;
+    padding: 2px 5px;
+    border-radius: 10px;
+    height: 350px;
+    overflow: auto;
+}
+
+.line{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgba(71, 71, 71, 0.726);
+    color: white;
+    font-size: 1.4em;
+    font-family: sans-serif;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px auto;
+}
+
+.item-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item-checkbox{
+    width: 15px;
+    height: 15px;
+}
+
+.item-text{
+    margin-left: 10px;
+}
+
+.btnDelete{
+    padding: 3px;
+}
+
+.btnDelete:focus{
+    outline: none;
+}
+
+.fa-trash-o{
+    font-size: 1.5em;
+    color: white;
+    vertical-align: middle;
+}
